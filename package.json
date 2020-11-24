@@ -6,10 +6,6 @@
   "license": "ISC",
   "main": "index.ts",
   "scripts": {
-    "lint": "standard --verbose | snazzy",
-    "test": "jest",
-    "test-coverage": "jest --collectCoverage",
-    "test-update": "jest --updateSnapshot",
     "start": "webpack serve --config webpack.config.js",
     "watch": "webpack serve --config webpack.config.js --progress --mode development"
   },
