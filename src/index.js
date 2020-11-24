@@ -2,7 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 console.log('==================================================================')
-console.log(process.env.PROCESS_ENV_TEST)
+try {
+  console.log(process.env.PROCESS_ENV_TEST)
+} catch (error) {
+  console.log('process failed')
+}
 console.log('==================================================================')
 
 ReactDOM.render(

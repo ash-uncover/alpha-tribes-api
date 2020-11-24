@@ -1,6 +1,5 @@
 /* eslint-disable */
 
-const webpack = require('webpack')
 const path = require('path')
 const node_modules = path.resolve(__dirname, 'node_modules')
 const pathToReact = path.resolve(node_modules, 'react/dist/react.min.js')
@@ -32,11 +31,7 @@ module.exports = {
     }
   },
 
-  plugins: [
-    new webpack.EnvironmentPlugin({
-      PROCESS_ENV_TEST: 'MyTestValue'
-    })
-  ],
+  plugins: [],
 
   module: {
     rules: [
